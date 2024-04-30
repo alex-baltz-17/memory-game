@@ -1,0 +1,13 @@
+.map-selection-cont {
+  .gridbuttons-cont {
+    display: flex;
+    gap: 20px;
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: #000;
+    }
+  }
+}

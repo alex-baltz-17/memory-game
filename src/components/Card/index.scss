@@ -1,0 +1,48 @@
+.card-grid {
+  display: grid;
+  margin-top: 20px;
+  grid-gap: 20px;
+
+  &.by-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.by-8 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &.by-18 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .card {
+    position: relative;
+    border: 5px solid wheat;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: 1px 1px;
+    cursor: pointer;
+
+    &.hidden {
+      transition: 1s;
+      visibility: hidden;
+      pointer-events: none;
+      p,
+      p.flipped {
+        transition: 1s;
+        visibility: hidden;
+      }
+    }
+    P {
+      margin: unset;
+      color: black;
+      visibility: hidden;
+      &.flipped {
+        visibility: visible;
+      }
+    }
+  }
+}
